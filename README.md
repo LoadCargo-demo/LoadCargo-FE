@@ -64,18 +64,19 @@ AI 에이전트가 밤사이 오더를 조합해 공차 구간 없는 '하루 �
 
 ## 🏗️ 기술 스택
 
-> ⚠️ 아래는 초안입니다 — 팀에서 확정된 스택으로 교체해주세요.
-
 | 영역 | 기술 |
 |---|---|
-| Frontend | `React` / `TypeScript` / `Vite` (또는 Next.js) |
-| 상태 관리 | `-` |
-| 스타일링 | `-` |
-| 패키지 조합·평가 | 규칙 기반 후보 생성 + `Gemini` 평가·서열화 (하이브리드) |
-| 음성 브리핑·질의응답 | `Gemini Live API` |
-| 경로·소요시간 | 지도 API (MCP 연동) |
-| 암묵지 보정 | 구조화 데이터 + 임베딩 검색 |
-
+| Frontend | `React` · `TypeScript` · `TailwindCSS` |
+| Backend | `FastAPI` |
+| DB | `PostgreSQL` |
+| Cache | `Redis` / `Valkey` |
+| AI | `LLM API` (패키지 조합·평가·협상·근거 문장 생성) |
+| 음성 | `STT` / `TTS` (아침 브리핑, "왜?" 질의응답, 운행 중 음성 확정) |
+| RAG | `Embedding` + `Vector Search` (암묵지 보정 — 하역장 대기시간, 단가 노하우) |
+| 지도·경로 | `Kakao Mobility API` (경로·소요시간, 패키지 시간축 검증) |
+| 실시간 통신 | `WebSocket` (운행 중 재조립 이벤트, 배차 보증 상태 갱신) |
+| 배포 | `AWS EC2` |
+ 
 <br/>
 
 ## 📁 폴더 구조
