@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "ko-KR"
+
+tone_instructions: >
+  항상 한국어로 리뷰를 작성해줘. 존댓말을 사용하되 장황하지 않고 간결하게,
+  요점만 명확히 짚어줘. 코드 스니펫이나 diff, 식별자(컴포넌트/함수/변수명)는
+  원문 그대로(영어) 유지하고 설명만 한국어로 작성해줘.
+
+early_access: false
+
+reviews:
+  profile: "chill"
+  high_level_summary: true
+  high_level_summary_placeholder: "@coderabbitai summary"
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  sequence_diagrams: false
+  request_changes_workflow: false
+  auto_review:
+    enabled: true
+    drafts: false
+
+  path_instructions:
+    - path: "**/*"
+      instructions: >
+        이 프로젝트의 스택: React, TypeScript, TailwindCSS, Vite, react-router-dom.
+        FastAPI 백엔드와 REST/WebSocket으로 통신하는 프론트엔드 레포다. 디렉토리
+        구조는 components(공통/화면별 컴포넌트) / pages(라우트 단위 화면) /
+        layouts(공통 레이아웃) / router(라우트 정의) / lib(api-client 등 공용
+        유틸) / styles(디자인 토큰 CSS 변수)로 나뉜다. 아직 초기 세팅 단계라
+        스텁 페이지("작업 예정" placeholder)들이 많으니, 내용이 비어있다는
+        지적보다는 구조·타입·컨벤션 위주로 리뷰해줘.
+
+    - path: "**/*.{ts,tsx}"
+      instructions: >
+        - any 타입 남용을 지적해줘. props와 함수 반환형에 타입이 명시되어 있는지 봐줘.
+        - 컴포넌트는 PascalCase, 함수/변수는 camelCase, 상수는 UPPER_SNAKE_CASE를 따라야 한다.
+        - 색상·spacing·radius 값을 하드코딩(예: className에 임의 hex 값)하지 않고
+          src/styles/tokens.css의 CSS 변수 또는 tailwind.config.js에 정의된
+          brand/point/gray/yellow/action/text 팔레트를 쓰는지 확인해줘.
+        - useEffect의 의존성 배열 누락, cleanup 누락 등 흔한 React 훅 실수를 봐줘.
+
+    - path: "src/components/**/*.tsx"
+      instructions: >
+        재사용 가능한 공통/화면별 컴포넌트다. 화면(page)별 비즈니스 로직이나
+        API 호출을 컴포넌트 내부에 직접 두지 말고, props로 데이터를 받거나
+        lib/api-client를 통한 훅으로 분리하도록 제안해줘. 접근성(예: 버튼에
+        aria-label, 클릭 가능한 요소가 button/실제 인터랙티브 태그인지)도 확인해줘.
+
+    - path: "src/pages/**/*.tsx"
+      instructions: >
+        라우트 단위 화면이다. 데이터 페칭은 lib/api-client의 apiFetch를 통해
+        이뤄져야 하고, fetch를 직접 호출하는 코드가 있으면 api-client 사용을
+        제안해줘. 페이지 컴포넌트가 지나치게 커지면(200줄 이상) 하위 컴포넌트로
+        분리를 제안해줘.
+
+    - path: "src/lib/**/*.ts"
+      instructions: >
+        api-client 등 공용 유틸리티다. 에러 처리가 일관적인지(ApiError 사용),
+        baseURL이 하드코딩되지 않고 환경변수(import.meta.env)를 통하는지 확인해줘.
+
+    - path: "src/router/**/*.ts"
+      instructions: >
+        라우트 경로 정의 전용이다. 문자열 경로가 ROUTES 상수를 거치지 않고
+        컴포넌트에 직접 하드코딩되어 있으면(예: navigate("/offer")) ROUTES 사용을
+        제안해줘.
+
+  auto_title_placeholder: "@coderabbitai"
+  auto_title_instructions: ""
+
+chat:
+  auto_reply: true
+
+knowledge_base:
+  learnings:
+    scope: "auto"

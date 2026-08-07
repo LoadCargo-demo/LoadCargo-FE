@@ -1,0 +1,35 @@
+/** 만차 디자인 토큰**/
+
+:root {
+  /* Color - Base */
+  --color-white-1000: #ffffff;
+  --color-black-900: #000000;
+  --color-black-alpha-5: rgba(0, 0, 0, 0.05);
+  --color-black-alpha-8: rgba(0, 0, 0, 0.08);
+
+  /* Color - Gray */
+  --color-gray-200: #ebebeb;
+  --color-gray-300: #d8d8e0;
+  --color-gray-400: #999999;
+  --color-gray-600: #666666;
+  --color-gray-900: #191919;
+
+  /* Color - Text */
+  --color-text-primary: #191919;
+  --color-text-inverse: #ffffff;
+
+  /* Color - Brand / Action */
+  --color-action-primary: #3581ff;
+  --color-blue-cta: #3581ff;
+  --color-blue-500: #3581ff;
+  --color-blue-50: #ebf4ff;
+  --color-blue-090: #e6f2ff;
+  --color-icon-brand: #3581ff;
+
+  /* Radius */
+  --radius-button-lg: 12px;
+
+  /* Spacing */
+  --spacing-card-padding: 16px;
+  --spacing-screen: 20px;
+}

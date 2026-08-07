@@ -1,0 +1,169 @@
+/**
+ * 만차 디자인 토큰
+ * tailwind.config.js의 brand/point/gray/yellow 팔레트를 CSS 변수로도 노출합니다.
+ * - Tailwind 클래스로 바로 쓸 수 있는 색은 기존처럼 `bg-brand-blue` 등을 사용하세요.
+ * - 컴포넌트 내부에서 `var(--color-...)`로 참조하는 공통 컴포넌트(Button, Navigation 등)를
+ *   위해 여기서 팔레트를 의미 단위 변수로 매핑해둡니다.
+ *
+ * main.tsx 또는 App.tsx 최상단에서 반드시 import 하세요:
+ *   import "./styles/tokens.css";
+ */
+:root {
+  /* Base */
+  --color-white-1000: #ffffff;
+  --color-black-900: #000000;
+  --color-black-alpha-5: rgba(0, 0, 0, 0.05);
+  --color-black-alpha-8: rgba(0, 0, 0, 0.08);
+
+  /* Gray (tailwind.config.js gray 스케일 매핑) */
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #f3f4f6;
+  --color-gray-300: #d9d9d9;
+  --color-gray-400: #afb1b6;
+  --color-gray-600: #657a88;
+  --color-gray-900: #000000;
+
+  /* Text */
+  --color-text-primary: #000000;
+  --color-text-secondary: #657a88;
+  --color-text-inverse: #ffffff;
+
+  /* Brand / Action (tailwind.config.js brand 스케일 매핑) */
+  --color-action-primary: #1e56ac; /* brand.blue */
+  --color-blue-cta: #1e56ac; /* brand.blue */
+  --color-blue-500: #1e56ac; /* brand.blue */
+  --color-blue-090: #c5e4f8; /* brand.soft */
+  --color-blue-50: #f4f8fc; /* brand.bg */
+  --color-icon-brand: #1e56ac; /* brand.blue */
+  --color-navy: #194059; /* brand.navy */
+  --color-light-blue: #4c9dd1; /* brand.lightBlue */
+
+  /* Point (경고/강조) */
+  --color-point-red: #f34876;
+  --color-point-pink: #ffcad9;
+  --color-point-bg: #fff2f2;
+
+  /* Yellow (알림) */
+  --color-yellow-dark: #856f00;
+  --color-yellow-main: #fff3b6;
+  --color-yellow-light: #fffbe6;
+
+  /* Radius */
+  --radius-button-lg: 12px;
+
+  /* Spacing */
+  --spacing-card-padding: 16px;
+  --spacing-screen: 20px;
+} /**
+ * 만차 디자인 토큰
+ * tailwind.config.js의 brand/point/gray/yellow 팔레트를 CSS 변수로도 노출합니다.
+ * - Tailwind 클래스로 바로 쓸 수 있는 색은 기존처럼 `bg-brand-blue` 등을 사용하세요.
+ * - 컴포넌트 내부에서 `var(--color-...)`로 참조하는 공통 컴포넌트(Button, Navigation 등)를
+ *   위해 여기서 팔레트를 의미 단위 변수로 매핑해둡니다.
+ *
+ * main.tsx 또는 App.tsx 최상단에서 반드시 import 하세요:
+ *   import "./styles/tokens.css";
+ */
+:root {
+  /* Base */
+  --color-white-1000: #ffffff;
+  --color-black-900: #000000;
+  --color-black-alpha-5: rgba(0, 0, 0, 0.05);
+  --color-black-alpha-8: rgba(0, 0, 0, 0.08);
+
+  /* Gray (tailwind.config.js gray 스케일 매핑) */
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #f3f4f6;
+  --color-gray-300: #d9d9d9;
+  --color-gray-400: #afb1b6;
+  --color-gray-600: #657a88;
+  --color-gray-900: #000000;
+
+  /* Text */
+  --color-text-primary: #000000;
+  --color-text-secondary: #657a88;
+  --color-text-inverse: #ffffff;
+
+  /* Brand / Action (tailwind.config.js brand 스케일 매핑) */
+  --color-action-primary: #1e56ac; /* brand.blue */
+  --color-blue-cta: #1e56ac; /* brand.blue */
+  --color-blue-500: #1e56ac; /* brand.blue */
+  --color-blue-090: #c5e4f8; /* brand.soft */
+  --color-blue-50: #f4f8fc; /* brand.bg */
+  --color-icon-brand: #1e56ac; /* brand.blue */
+  --color-navy: #194059; /* brand.navy */
+  --color-light-blue: #4c9dd1; /* brand.lightBlue */
+
+  /* Point (경고/강조) */
+  --color-point-red: #f34876;
+  --color-point-pink: #ffcad9;
+  --color-point-bg: #fff2f2;
+
+  /* Yellow (알림) */
+  --color-yellow-dark: #856f00;
+  --color-yellow-main: #fff3b6;
+  --color-yellow-light: #fffbe6;
+
+  /* Radius */
+  --radius-button-lg: 12px;
+
+  /* Spacing */
+  --spacing-card-padding: 16px;
+  --spacing-screen: 20px;
+} /**
+ * 만차 디자인 토큰
+ * tailwind.config.js의 brand/point/gray/yellow 팔레트를 CSS 변수로도 노출합니다.
+ * - Tailwind 클래스로 바로 쓸 수 있는 색은 기존처럼 `bg-brand-blue` 등을 사용하세요.
+ * - 컴포넌트 내부에서 `var(--color-...)`로 참조하는 공통 컴포넌트(Button, Navigation 등)를
+ *   위해 여기서 팔레트를 의미 단위 변수로 매핑해둡니다.
+ *
+ * main.tsx 또는 App.tsx 최상단에서 반드시 import 하세요:
+ *   import "./styles/tokens.css";
+ */
+:root {
+  /* Base */
+  --color-white-1000: #ffffff;
+  --color-black-900: #000000;
+  --color-black-alpha-5: rgba(0, 0, 0, 0.05);
+  --color-black-alpha-8: rgba(0, 0, 0, 0.08);
+
+  /* Gray (tailwind.config.js gray 스케일 매핑) */
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #f3f4f6;
+  --color-gray-300: #d9d9d9;
+  --color-gray-400: #afb1b6;
+  --color-gray-600: #657a88;
+  --color-gray-900: #000000;
+
+  /* Text */
+  --color-text-primary: #000000;
+  --color-text-secondary: #657a88;
+  --color-text-inverse: #ffffff;
+
+  /* Brand / Action (tailwind.config.js brand 스케일 매핑) */
+  --color-action-primary: #1e56ac; /* brand.blue */
+  --color-blue-cta: #1e56ac; /* brand.blue */
+  --color-blue-500: #1e56ac; /* brand.blue */
+  --color-blue-090: #c5e4f8; /* brand.soft */
+  --color-blue-50: #f4f8fc; /* brand.bg */
+  --color-icon-brand: #1e56ac; /* brand.blue */
+  --color-navy: #194059; /* brand.navy */
+  --color-light-blue: #4c9dd1; /* brand.lightBlue */
+
+  /* Point (경고/강조) */
+  --color-point-red: #f34876;
+  --color-point-pink: #ffcad9;
+  --color-point-bg: #fff2f2;
+
+  /* Yellow (알림) */
+  --color-yellow-dark: #856f00;
+  --color-yellow-main: #fff3b6;
+  --color-yellow-light: #fffbe6;
+
+  /* Radius */
+  --radius-button-lg: 12px;
+
+  /* Spacing */
+  --spacing-card-padding: 16px;
+  --spacing-screen: 20px;
+}
