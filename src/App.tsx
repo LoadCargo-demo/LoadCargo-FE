@@ -51,6 +51,11 @@ export default function App() {
           path={ROUTES.companyDailyReport}
           element={<CompanyDailyReportPage />}
         />
+
+        {/* 하단 탭바가 있는 화면들 */}
+        <Route element={<MobileLayout />}></Route>
+
+        {/* 탭바 없이 독립적으로 쓰는 화면 (온보딩 등) */}
       </Routes>
     </BrowserRouter>
   );
