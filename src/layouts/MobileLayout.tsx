@@ -3,7 +3,8 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import SystemStatusBar from '../components/common/SystemStatusBar';
 import BottomTabBar, {
   type BottomTabKey,
-} from '@/components/common/BottomTabBar';
+} from '../components/common/BottomTabBar';
+
 import { ROUTES } from '../router/routes';
 
 // 경로 ↔ 탭 매핑. 탭이 없는 페이지(예: 온보딩)는 여기 없으면 탭바가 전부 비활성으로 보입니다.
