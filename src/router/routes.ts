@@ -8,6 +8,14 @@ export const ROUTES = {
   negotiation: '/negotiation',
   myCriteria: '/my-criteria',
   onboarding: '/onboarding',
+
+  // 화주(업체) 콘솔 — 데스크톱 전용, 하단 탭바 없음
+  companyOrders: '/company/orders',
+  companyDispatchBoard: '/company/dispatch-board',
+  companyNegotiation: '/company/negotiation',
+  companyGuarantee: '/company/guarantee',
+  companyPricingArchive: '/company/pricing-archive',
+  companyDailyReport: '/company/daily-report',
 } as const;
 
 export type RouteKey = keyof typeof ROUTES;
