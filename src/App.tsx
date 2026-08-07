@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import MobileLayout from './layouts/MobileLayout';
-import { ROUTES } from './router/routes';
+// import { ROUTES } from './router/routes';
 
 export default function App() {
   return (
