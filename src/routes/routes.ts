@@ -3,11 +3,11 @@
  * 페이지 이동 시 <Link to={ROUTES.home} /> 처럼 사용하세요.
  */
 export const ROUTES = {
-  home: "/",
-  offer: "/offer",
-  negotiation: "/negotiation",
-  myCriteria: "/my-criteria",
-  onboarding: "/onboarding",
+  home: '/',
+  offer: '/offer',
+  negotiation: '/negotiation',
+  myCriteria: '/my-criteria',
+  onboarding: '/onboarding',
 } as const;
 
 export type RouteKey = keyof typeof ROUTES;
